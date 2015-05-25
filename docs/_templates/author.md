@@ -1,0 +1,4 @@
+**{%= author.name %}**
+* [GitHub](https://github.com/{%= author.github %})
+* [Twitter](http://twitter.com/{%= author.twitter %})
+* [LinkedIn](https://hu.linkedin.com/pub/{%= author.linkedin %})
