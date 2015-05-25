@@ -10,7 +10,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Sweetchuck/grunt-bundle-wrapper.git"
+    "owner": "Sweetchuck",
+    "name": "grunt-bundle-wrapper",
+    "url": "https://github.com/Sweetchuck/grunt-bundle-wrapper.git"
   },
   "bugs": {
     "url": "https://github.com/Sweetchuck/grunt-bundle-wrapper/issues"

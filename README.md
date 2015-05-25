@@ -62,7 +62,7 @@
 
 ## Build status
 
-[![Build Status: Linux](https://travis-ci.org//grunt-bundle-wrapper.svg?branch=master)](https://travis-ci.org//grunt-bundle-wrapper)
+[![Build Status: Linux](https://travis-ci.org/Sweetchuck/grunt-bundle-wrapper.svg?branch=master)](https://travis-ci.org/Sweetchuck/grunt-bundle-wrapper)
 
 
 ## Install
