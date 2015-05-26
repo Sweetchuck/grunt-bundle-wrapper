@@ -38,6 +38,13 @@ module.exports = function (grunt) {
       }
     },
 
+    watch: {
+      docs: {
+        files: ['docs/**/*.{md,yml}', 'package.json'],
+        tasks: ['verb']
+      }
+    },
+
     // Unit tests.
     nodeunit: {
       tests: ['test/*_test.js']
@@ -51,6 +58,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
   grunt.loadNpmTasks('grunt-contrib-internal');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-eslint');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-verb');

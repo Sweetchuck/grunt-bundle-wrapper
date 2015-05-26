@@ -1,7 +1,6 @@
 # grunt-bundle-wrapper
 
 
-
 <!-- toc -->
 
 * [Build status](#build-status)
@@ -10,33 +9,33 @@
 * [Tasks](#tasks)
   * [bundle-check](#bundle-check)
   * [bundle-install](#bundle-install)
-* [Options](#options)
-  * [rubyExecutable](#rubyexecutable)
-  * [bundleExecutable](#bundleexecutable)
-  * [args](#args)
-  * [outputNameFailed](#outputnamefailed)
-  * [inputNameFiles](#inputnamefiles)
-* [Arguments](#arguments)
-  * [gemFile](#gemfile)
-  * [path](#path)
-  * [retry](#retry)
-  * [dryRun](#dryrun)
-  * [noColor](#nocolor)
-  * [verbose](#verbose)
-  * [system](#system)
-  * [without](#without)
-  * [local](#local)
-  * [deployment](#deployment)
-  * [binStubs](#binstubs)
-  * [standalone](#standalone)
-  * [trustPolicy](#trustpolicy)
-  * [jobs](#jobs)
-  * [noCache](#nocache)
-  * [quiet](#quiet)
-  * [clean](#clean)
-  * [fullIndex](#fullindex)
-  * [noPrune](#noprune)
-  * [shebang](#shebang)
+* [Configuration](#configuration)
+  * [options.rubyExecutable](#optionsrubyexecutable)
+  * [options.bundleExecutable](#optionsbundleexecutable)
+  * [options.outputNameFailed](#optionsoutputnamefailed)
+  * [options.inputNameFiles](#optionsinputnamefiles)
+  * [options.args](#optionsargs)
+  * [options.args.gemFile](#optionsargsgemfile)
+  * [options.args.path](#optionsargspath)
+  * [options.args.retry](#optionsargsretry)
+  * [options.args.dryRun](#optionsargsdryrun)
+  * [options.args.noColor](#optionsargsnocolor)
+  * [options.args.verbose](#optionsargsverbose)
+  * [options.args.system](#optionsargssystem)
+  * [options.args.without](#optionsargswithout)
+  * [options.args.local](#optionsargslocal)
+  * [options.args.deployment](#optionsargsdeployment)
+  * [options.args.binStubs](#optionsargsbinstubs)
+  * [options.args.standalone](#optionsargsstandalone)
+  * [options.args.trustPolicy](#optionsargstrustpolicy)
+  * [options.args.jobs](#optionsargsjobs)
+  * [options.args.noCache](#optionsargsnocache)
+  * [options.args.quiet](#optionsargsquiet)
+  * [options.args.clean](#optionsargsclean)
+  * [options.args.fullIndex](#optionsargsfullindex)
+  * [options.args.noPrune](#optionsargsnoprune)
+  * [options.args.shebang](#optionsargsshebang)
+  * [files](#files)
 * [Flags](#flags)
   * [Flag dry-run](#flag-dry-run)
   * [Flag no-color](#flag-no-color)
@@ -81,22 +80,20 @@ npm install grunt-bundle-wrapper --save-dev
 
 Wrapper around the `bundle check` command.
 
-**Supported options**
+**Configuration**
 
-* [rubyExecutable](#rubyexecutable)
-* [bundleExecutable](#bundleexecutable)
-* [args](#args)
-* [outputNameFailed](#outputnamefailed)
-
-
-**Supported arguments**
-
-* [gemFile](#gemfile)
-* [path](#path)
-* [dryRun](#dryrun)
-* [noColor](#nocolor)
-* [verbose](#verbose)
-* [retry](#retry)
+* options
+  * [rubyExecutable](#optionsrubyexecutable)
+  * [bundleExecutable](#optionsbundleexecutable)
+  * [args](#optionsargs)
+    * [gemFile](#optionsargsgemfile)
+    * [path](#optionsargspath)
+    * [dryRun](#optionsargsdryrun)
+    * [noColor](#optionsargsnocolor)
+    * [verbose](#optionsargsverbose)
+    * [retry](#optionsargsretry)
+  * [outputNameFailed](#optionsoutputnamefailed)
+* [files](#files)
 
 With the default options the
 ```bash
@@ -113,32 +110,31 @@ bundle check
 
 Wrapper around the `bundle install` command.
 
-**Supported options**
+**Configuration**
 
-* [rubyExecutable](#rubyexecutable)
-* [bundleExecutable](#bundleexecutable)
-* [args](#args)
-* [inputNameFiles](#inputnamefiles)
-
-**Supported arguments**
-
-* [gemfile](#gemfile)
-* [path](#path)
-* [system](#system)
-* [without](#without)
-* [local](#local)
-* [deployment](#deployment)
-* [binStubs](#binstubs)
-* [standalone](#standalone)
-* [trustPolicy](#trustpolicy)
-* [jobs](#jobs)
-* [retry](#retry)
-* [noCache](#nocache)
-* [quiet](#quiet)
-* [clean](#clean)
-* [fullIndex](#fullindex)
-* [noPrune](#noprune)
-* [shebang](#shebang)
+* options
+  * [rubyExecutable](#optionsrubyexecutable)
+  * [bundleExecutable](#optionsbundleexecutable)
+  * [args](#optionsargs)
+    * [gemFile](#optionsargsgemfile)
+    * [path](#optionsargspath)
+    * [system](#optionsargssystem)
+    * [without](#optionsargswithout)
+    * [local](#optionsargslocal)
+    * [deployment](#optionsargsdeployment)
+    * [binStubs](#optionsargsbinstubs)
+    * [standalone](#optionsargsstandalone)
+    * [trustPolicy](#optionsargstrustpolicy)
+    * [jobs](#optionsargsjobs)
+    * [retry](#optionsargsretry)
+    * [noCache](#optionsargsnocache)
+    * [quiet](#optionsargsquiet)
+    * [clean](#optionsargsclean)
+    * [fullIndex](#optionsargsfullindex)
+    * [noPrune](#optionsargsnoprune)
+    * [shebang](#optionsargsshebang)
+  * [inputNameFiles](#optionsinputnamefiles)
+* [files](#files)
 
 With the default options the
 ```bash
@@ -151,242 +147,244 @@ bundle install
 ```
 
 
-## Options
+## Configuration
 
-### rubyExecutable
+### options.rubyExecutable
 
 Type: `String`
 
 Default value: `''`
 
 
-### bundleExecutable
+### options.bundleExecutable
 
 Type: `String`
 
 Default value: `'bundle'`
 
 
-### args
+### options.outputNameFailed
+
+Type: `String`
+
+Default value: `''`
+
+
+### options.inputNameFiles
+
+Type: `String`
+
+Default value: `''`
+
+
+### options.args
 
 Type: `Object`
 
 Default value: `{}`
 
-
-### outputNameFailed
-
-Type: `String`
-
-Default value: `''`
-
-
-### inputNameFiles
-
-Type: `String`
-
-Default value: `''`
-
-
-## Arguments
-
 All argument is same as the CLI counterpart.
 You can check them with the `$ bundle help {check|install}` command.
 
 
-### gemFile
+### options.args.gemFile
 
 Type: `String`
 
 Default value: `null`
 
 
-### path
+### options.args.path
 
 Type: `String`
 
 Default value: `null`
 
 
-### retry
+### options.args.retry
 
 Type: `Number`
 
 Default value: `null`
 
 
-### dryRun
+### options.args.dryRun
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-### noColor
+### options.args.noColor
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-### verbose
+### options.args.verbose
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-### system
+### options.args.system
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-### without
+### options.args.without
 
 Type: `String`
 
 Default value: `null`
 
 
-### local
+### options.args.local
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-### deployment
+### options.args.deployment
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-### binStubs
+### options.args.binStubs
 
 Type: `String|Boolean`
 
 Default value: `null`
 
 
-### standalone
+### options.args.standalone
 
 Type: `String|Boolean`
 
 Default value: `null`
 
 
-### trustPolicy
+### options.args.trustPolicy
 
 Type: `String|Boolean`
 
 Default value: `null`
 
 
-### jobs
+### options.args.jobs
 
 Type: `Number`
 
 Default value: `null`
 
 
-### noCache
+### options.args.noCache
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-### quiet
+### options.args.quiet
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-### clean
+### options.args.clean
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-### fullIndex
+### options.args.fullIndex
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-### noPrune
+### options.args.noPrune
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-### shebang
+### options.args.shebang
 
 Type: `String`
 
 Default value: `null`
+
+
+### files
+
+For more information see the Grunt documentation [Configuring tasks/files](http://gruntjs.com/configuring-tasks#files)
 
 
 ## Flags
 
-You can modify the arguments by [Flags](http://gruntjs.com/api/inside-tasks#this.flags)
+You can modify the [options.args](#optionsargs) by [Flags](http://gruntjs.com/api/inside-tasks#this.flags)
 
 
 ### Flag dry-run
 
-Override the value of the [dryRun](#dryrun) argument with `true`.
+Override the value of the [options.args.dryRun](#optionsargsdryrun) argument with `true`.
 
 
 ### Flag no-color
 
-Override the value of the [noColor](#nocolor) argument with `true`.
+Override the value of the [options.args.noColor](#optionsargsnocolor) argument with `true`.
 
 
 ### Flag verbose
 
-Override the value of the [verbose](#verbose) argument with `true`.
+Override the value of the [options.args.verbose](#optionsargsverbose) argument with `true`.
 
 
 ### Flag system
 
-Override the value of the [system](#system) argument with `true`.
+Override the value of the [options.args.system](#optionsargssystem) argument with `true`.
 
 
 ### Flag local
 
-Override the value of the [local](#local) argument with `true`.
+Override the value of the [options.args.local](#optionsargslocal) argument with `true`.
 
 
 ### Flag deployment
 
-Override the value of the [deployment](#deployment) argument with `true`.
+Override the value of the [options.args.deployment](#optionsargsdeployment) argument with `true`.
 
 
 ### Flag no-cache
 
-Override the value of the [noCache](#nocache) argument with `true`.
+Override the value of the [options.args.noCache](#optionsargsnocache) argument with `true`.
 
 
 ### Flag quiet
 
-Override the value of the [quiet](#quiet) argument with `true`.
+Override the value of the [options.args.quiet](#optionsargsquiet) argument with `true`.
 
 
 ### Flag full-index
 
-Override the value of the [fullIndex](#fullindex) argument with `true`.
+Override the value of the [options.args.fullIndex](#optionsargsfullindex) argument with `true`.
 
 
 ### Flag no-prune
 
-Override the value of the [noPrune](#noprune) argument with `true`.
+Override the value of the [options.args.noPrune](#optionsargsnoprune) argument with `true`.
 
 
 ## Examples
@@ -550,4 +548,4 @@ Released under the GPL2 license
 
 ***
 
-_This file was generated by [grunt-verb](https://github.com/assemble/grunt-verb) on May 25, 2015._
+_This file was generated by [grunt-verb](https://github.com/assemble/grunt-verb) on May 26, 2015._

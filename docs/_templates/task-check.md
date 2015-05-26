@@ -1,21 +1,19 @@
 Wrapper around the `bundle check` command.
 
-**Supported options**
+**Configuration**
 
-* [rubyExecutable](#rubyexecutable)
-* [bundleExecutable](#bundleexecutable)
-* [args](#args)
-* [outputNameFailed](#outputnamefailed)
-
-
-**Supported arguments**
-
-* [gemFile](#gemfile)
-* [path](#path)
-* [dryRun](#dryrun)
-* [noColor](#nocolor)
-* [verbose](#verbose)
-* [retry](#retry)
+* options
+  * [rubyExecutable](#optionsrubyexecutable)
+  * [bundleExecutable](#optionsbundleexecutable)
+  * [args](#optionsargs)
+    * [gemFile](#optionsargsgemfile)
+    * [path](#optionsargspath)
+    * [dryRun](#optionsargsdryrun)
+    * [noColor](#optionsargsnocolor)
+    * [verbose](#optionsargsverbose)
+    * [retry](#optionsargsretry)
+  * [outputNameFailed](#optionsoutputnamefailed)
+* [files](#files)
 
 With the default options the
 ```bash
