@@ -4,7 +4,6 @@ toc:
 ---
 
 # {%= name %}
-
 <!-- toc -->
 
 ## Build status
@@ -27,13 +26,9 @@ toc:
 
 {%= docs('task-install') %}
 
-## Options
+## Configuration
 
-{%= docs('options') %}
-
-## Arguments
-
-{%= docs('arguments') %}
+{%= docs('config') %}
 
 ## Flags
 

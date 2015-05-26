@@ -1,51 +1,51 @@
-You can modify the arguments by [Flags](http://gruntjs.com/api/inside-tasks#this.flags)
+You can modify the [options.args](#optionsargs) by [Flags](http://gruntjs.com/api/inside-tasks#this.flags)
 
 
 ## Flag dry-run
 
-Override the value of the [dryRun](#dryrun) argument with `true`.
+Override the value of the [options.args.dryRun](#optionsargsdryrun) argument with `true`.
 
 
 ## Flag no-color
 
-Override the value of the [noColor](#nocolor) argument with `true`.
+Override the value of the [options.args.noColor](#optionsargsnocolor) argument with `true`.
 
 
 ## Flag verbose
 
-Override the value of the [verbose](#verbose) argument with `true`.
+Override the value of the [options.args.verbose](#optionsargsverbose) argument with `true`.
 
 
 ## Flag system
 
-Override the value of the [system](#system) argument with `true`.
+Override the value of the [options.args.system](#optionsargssystem) argument with `true`.
 
 
 ## Flag local
 
-Override the value of the [local](#local) argument with `true`.
+Override the value of the [options.args.local](#optionsargslocal) argument with `true`.
 
 
 ## Flag deployment
 
-Override the value of the [deployment](#deployment) argument with `true`.
+Override the value of the [options.args.deployment](#optionsargsdeployment) argument with `true`.
 
 
 ## Flag no-cache
 
-Override the value of the [noCache](#nocache) argument with `true`.
+Override the value of the [options.args.noCache](#optionsargsnocache) argument with `true`.
 
 
 ## Flag quiet
 
-Override the value of the [quiet](#quiet) argument with `true`.
+Override the value of the [options.args.quiet](#optionsargsquiet) argument with `true`.
 
 
 ## Flag full-index
 
-Override the value of the [fullIndex](#fullindex) argument with `true`.
+Override the value of the [options.args.fullIndex](#optionsargsfullindex) argument with `true`.
 
 
 ## Flag no-prune
 
-Override the value of the [noPrune](#noprune) argument with `true`.
+Override the value of the [options.args.noPrune](#optionsargsnoprune) argument with `true`.

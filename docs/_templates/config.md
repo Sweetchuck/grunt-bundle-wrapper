@@ -1,142 +1,181 @@
+## options.rubyExecutable
+
+Type: `String`
+
+Default value: `''`
+
+
+## options.bundleExecutable
+
+Type: `String`
+
+Default value: `'bundle'`
+
+
+## options.outputNameFailed
+
+Type: `String`
+
+Default value: `''`
+
+
+## options.inputNameFiles
+
+Type: `String`
+
+Default value: `''`
+
+
+## options.args
+
+Type: `Object`
+
+Default value: `{}`
+
 All argument is same as the CLI counterpart.
 You can check them with the `$ bundle help {check|install}` command.
 
 
-## gemFile
+## options.args.gemFile
 
 Type: `String`
 
 Default value: `null`
 
 
-## path
+## options.args.path
 
 Type: `String`
 
 Default value: `null`
 
 
-## retry
+## options.args.retry
 
 Type: `Number`
 
 Default value: `null`
 
 
-## dryRun
+## options.args.dryRun
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-## noColor
+## options.args.noColor
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-## verbose
+## options.args.verbose
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-## system
+## options.args.system
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-## without
+## options.args.without
 
 Type: `String`
 
 Default value: `null`
 
 
-## local
+## options.args.local
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-## deployment
+## options.args.deployment
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-## binStubs
+## options.args.binStubs
 
 Type: `String|Boolean`
 
 Default value: `null`
 
 
-## standalone
+## options.args.standalone
 
 Type: `String|Boolean`
 
 Default value: `null`
 
 
-## trustPolicy
+## options.args.trustPolicy
 
 Type: `String|Boolean`
 
 Default value: `null`
 
 
-## jobs
+## options.args.jobs
 
 Type: `Number`
 
 Default value: `null`
 
 
-## noCache
+## options.args.noCache
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-## quiet
+## options.args.quiet
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-## clean
+## options.args.clean
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-## fullIndex
+## options.args.fullIndex
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-## noPrune
+## options.args.noPrune
 
 Type: `Boolean`
 
 Default value: `false`
 
 
-## shebang
+## options.args.shebang
 
 Type: `String`
 
 Default value: `null`
+
+
+## files
+
+For more information see the Grunt documentation [Configuring tasks/files](http://gruntjs.com/configuring-tasks#files)

@@ -1,31 +1,30 @@
 Wrapper around the `bundle install` command.
 
-**Supported options**
+**Configuration**
 
-* [rubyExecutable](#rubyexecutable)
-* [bundleExecutable](#bundleexecutable)
-* [args](#args)
-* [inputNameFiles](#inputnamefiles)
-
-**Supported arguments**
-
-* [gemfile](#gemfile)
-* [path](#path)
-* [system](#system)
-* [without](#without)
-* [local](#local)
-* [deployment](#deployment)
-* [binStubs](#binstubs)
-* [standalone](#standalone)
-* [trustPolicy](#trustpolicy)
-* [jobs](#jobs)
-* [retry](#retry)
-* [noCache](#nocache)
-* [quiet](#quiet)
-* [clean](#clean)
-* [fullIndex](#fullindex)
-* [noPrune](#noprune)
-* [shebang](#shebang)
+* options
+  * [rubyExecutable](#optionsrubyexecutable)
+  * [bundleExecutable](#optionsbundleexecutable)
+  * [args](#optionsargs)
+    * [gemFile](#optionsargsgemfile)
+    * [path](#optionsargspath)
+    * [system](#optionsargssystem)
+    * [without](#optionsargswithout)
+    * [local](#optionsargslocal)
+    * [deployment](#optionsargsdeployment)
+    * [binStubs](#optionsargsbinstubs)
+    * [standalone](#optionsargsstandalone)
+    * [trustPolicy](#optionsargstrustpolicy)
+    * [jobs](#optionsargsjobs)
+    * [retry](#optionsargsretry)
+    * [noCache](#optionsargsnocache)
+    * [quiet](#optionsargsquiet)
+    * [clean](#optionsargsclean)
+    * [fullIndex](#optionsargsfullindex)
+    * [noPrune](#optionsargsnoprune)
+    * [shebang](#optionsargsshebang)
+  * [inputNameFiles](#optionsinputnamefiles)
+* [files](#files)
 
 With the default options the
 ```bash
